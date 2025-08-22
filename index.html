@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <div class="trans-toggle" id="transToggle">
+        <i class="fas fa-rainbow"></i>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello, I'm</span>
+                        <span class="title-name">Ivy Mycelia</span>
+                        <span class="title-role">Bioinformatist & Programmer.</span>
+                    </h1>
+                    <p class="hero-description">
+                        I build from scratch. I make modular tools that don't need hand-holding.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-element" data-speed="2"></div>
+                        <div class="floating-element" data-speed="1.5"></div>
+                        <div class="floating-element" data-speed="3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi, I’m Ivy. I’m a hobbyist programmer who loves building things from scratch — e
+                            specially weird little engines, AI sims, and tools that actually feel alive. I tinker a
+                            lot, I read too much, and I’m kinda obsessed with bioinformatics and game design. 
+                        </p>
+                        <p>
+                            Still learning, always building.
+                        </p>
+                        <div class="skills">
+                            <h3>Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C / C++ / C#</span>
+                                <span class="skill-tag">Assembly</span>
+                                <span class="skill-tag">Python / Lua</span>
+                                <span class="skill-tag">Rust</span>
+                                <span class="skill-tag">Myco</span>
+                                <span class="skill-tag">Web Dev</span>
+                                <span class="skill-tag">Modular Design</span>
+                                <span class="skill-tag">Bioinformatics</span>
+                                <span class="skill-tag">Biological Engineering</span>
+                                <span class="skill-tag">Blender</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/PFP.png" alt="Ivy Mycelia" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/gameengine.png" alt="Custom Game Engine" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Blight & Bloom</h3>
+                            <p>A modular game engine built from scratch in Myco, featuring custom rendering pipeline, entity component system, and procedural generation. Designed for games that need to run on anything with upmost performance.</p>
+                            <div class="project-tech">
+                                <span>Myco</span>
+                                <span>Vector Maths</span>
+                                <span>Procedural Generation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Myco_Image.png" alt="Myco Programming Language" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Myco</h3>
+                            <p>Custom programming language, written entirely in C. Optimized for performance and weight, with the power of Native C / ASM, and the ease of Python and Lua.</p>
+                            <div class="project-tech">
+                                <span>C</span>
+                                <span>Parser</span>
+                                <span>Compiler</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/IvyMycelia/myco" class="project-link">GitHub</a>
+                                <a href="https://github.com/IvyMycelia/Myco/blob/main/Documentation.md" class="project-link">Docs</a>
+                                <a href="https://mycolang.org" class="project-link">Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/airquality.png" alt="Air Quality Monitor" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Air Quality Monitor</h3>
+                            <p>A map of air quality around my town, using Arduino and a series of sensors to collect accurate data displayed on a web page (Though not visible). Using biomass and custom containers to passively absorb CO2 and pollutants, it cleans the air around it.</p>
+                            <div class="project-tech">
+                                <span>Arduino</span>
+                                <span>C++</span>
+                                <span>IoT</span>
+                                <span>Biological Engineering</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Prototype</a>
+                                <a href="#" class="project-link">Research</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's build something dangerous</h3>
+                        <p>I'm always interested in engine work, experimental bioinformatics, or projects that push the boundaries of what's possible. Let's make something that doesn't exist yet.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>contact.ivy353@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>[Sorry, No Phone]</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>United States, The Blue Marble</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ivy-c-4b3abb339/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@trendybanana" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/ivymycelia/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ivy Mycelia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
