@@ -712,6 +712,31 @@ body:hover::before {
     border-color: var(--accent-purple);
 }
 
+/* Testimonial */
+.testimonial {
+    background: var(--bg-tertiary);
+    border-left: 4px solid var(--accent-purple);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.testimonial-author {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
 .footer {
     background: var(--accent-black);
     color: white;
