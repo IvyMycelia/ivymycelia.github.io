@@ -53,8 +53,8 @@ header nav {
 .project-desc { margin: 0.25rem 0; color: var(--muted); }
 .project-tech { font-size: 0.9rem; color: var(--muted); }
 .link { margin-right: 0.5rem; color: var(--accent); text-decoration: none; }
-.link img { width: 20px; height: 20px; display: inline-block; vertical-align: middle; transition: opacity 0.2s; }
-.link img:hover { opacity: 0.7; }
+.link .source { width: 20px; height: 20px; display: inline-block; vertical-align: middle; transition: opacity 0.2s; }
+.link .source:hover { opacity: 0.7; }
 
 .case-study { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); margin-bottom: 1rem; }
 
