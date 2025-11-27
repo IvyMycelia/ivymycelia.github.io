@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ivy Mycelia — Portfolio</title>
+        <meta name="description" content="Ivy Mycelia — portfolio showcasing projects, skills, and contact information.">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header role="banner">
+            <nav aria-label="Primary">
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero">
+                <div class="container">
+                    <h1>Ivy Mycelia</h1>
+                    <p class="lead">I build thoughtful software — frontend, backend, and big codebases.</p>
+                    <p class="cta">
+                        <a class="btn" href="#projects">See projects</a>
+                        <a class="btn secondary" href="resume.pdf" download>Download resume</a>
+                    </p>
+                </div>
+            </section>
+
+            <section id="about" class="about container">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hi — I'm Ivy. I design and build web interfaces and software. I enjoy working on accessible, performance-minded projects and shipping clean, maintainable code.</p>
+                        <p>Location: New Jersey, United States • Open to work or collaboration</p>
+                    </div>
+                    <div class="about-photo">
+                        <img src="images/avatar.jpg" alt="Ivy Mycelia portrait" class="avatar">
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <img src="images/serrate-screenshot.png" alt="Screenshot of Serrate" class="project-screenshot">
+                        <div class="project-content">
+                            <h3 class="project-title">Serrate</h3>
+                            <p class="project-desc">A homebrewn bootstrappable compiler, made from scratch in C.</p>
+                            <p class="project-tech">C • Serrate • Compiler Theory</p>
+                            <p class="project-links">
+                                <a href="https://github.com/IvyMycelia/Serrate" class="link"><img src="logos/github.png"></a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="case-studies" class="container">
+                <h2>Papers</h2>
+                <article id="case-concrete-to-mycelium" class="case-study">
+                    <h3>From Concrete to Mycelium: Building a Sustainable Future with Nature </h3>
+                    <p class="muted">Role: Researcher & Writer • Timeline: 5 months</p>
+                    <h4>Problem</h4>
+                    <p>The cement industry alone pumps out more CO2 than the entire country of India.</p>
+                    <h4>About</h4>
+                    <p>This paper goes over green alternatives to cement — specifically mycellium — and how the world can implement its use.</p>
+                </article>
+            </section>
+
+            <section id="contact" class="contact container">
+                <h2>Contact</h2>
+                <form action="mailto:contact.ivy353@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send</button>
+                </form>
+                <p class="privacy">By contacting me you agree I may reply via email. No spam. Your message will not be shared.</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Ivy Mycelia — Built with love</p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

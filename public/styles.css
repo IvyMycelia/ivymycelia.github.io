@@ -1,0 +1,69 @@
+body {
+  --bg: #f7fbff;
+  --accent: #0b78d1;
+  --muted: #555;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: #111;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Utilities */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.hero {
+  background: linear-gradient(180deg, var(--accent) 0%, #5fb0ff 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.lead { font-size: 1.1rem; margin: 0.5rem 0 1rem; }
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: var(--accent);
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.btn.secondary { background: rgba(255,255,255,0.15); color: white; }
+
+.about-grid { display: grid; grid-template-columns: 1fr 160px; gap: 1rem; align-items: center; }
+.avatar { width: 140px; height: 140px; object-fit: cover; border-radius: 8px; }
+
+.project-grid { display: grid; gap: 1rem; }
+.project-card { display: flex; gap: 1rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.project-screenshot { width: 220px; height: 140px; object-fit: cover; border-radius: 6px; }
+.project-title { margin: 0 0 0.25rem; }
+.project-desc { margin: 0.25rem 0; color: var(--muted); }
+.project-tech { font-size: 0.9rem; color: var(--muted); }
+.link { margin-right: 0.5rem; color: var(--accent); text-decoration: none; }
+
+.case-study { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); margin-bottom: 1rem; }
+
+.contact form { display: grid; gap: 0.5rem; max-width: 600px; }
+label { font-weight: 600; }
+input, textarea { padding: 0.5rem; border: 1px solid #ddd; border-radius: 6px; }
+
+.site-footer { padding: 1rem 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+
+@media (max-width: 600px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .project-card { flex-direction: column; }
+  .project-screenshot { width: 100%; height: auto; }
+}
