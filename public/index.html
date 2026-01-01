@@ -2,9 +2,253 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ivy Mycelia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ivy Mycelia's portfolio - building, tinkering, and exploring systems in code, games, and ideas">
+    <meta property="og:title" content="Ivy Mycelia - Portfolio">
+    <meta property="og:description" content="Building, tinkering, and exploring systems in code, games, and ideas">
+    <meta property="og:type" content="website">
+    <title>Ivy Mycelia - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&family=Lato:wght@300;400;700&family=Fira+Code:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1 style="text-align: center">Under Maintenance</h1>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Ivy Mycelia</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-controls">
+                <button class="theme-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <span class="toggle-label">Dark</span>
+                    <span class="toggle-switch"></span>
+                </button>
+                <button class="theme-toggle blahaj-toggle" id="blahajToggle" aria-label="Toggle blahaj theme" style="display: none;">
+                    <span class="toggle-label">Blahaj</span>
+                    <span class="toggle-switch"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <h2 class="hero-tagline fade-in">I build, tinker, and explore systems in code, games, and ideas.</h2>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+                <div class="about-content fade-in">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <span>Photo Placeholder (NOT DOXXING MYSELF)</span>
+                        </div>
+                    </div>
+                    <div class="about-text glass-panel">
+                        <p>I'm a developer who finds joy in building, tinkering, and exploring systems across different domains. My interests span programming, game design, Bioinformatics, and the art of making things work (or breaking them to understand how they tick!).</p>
+                        <p>I approach each project with curiosity and a mindset focused on understanding how things connect—whether that's low-level systems in C and Assembly, web technologies, or the intricate systems found in game design and simulations.</p>
+                        <p>When I'm not coding, I'm often tending to my fungi and plants, experimenting with new ideas, or reading a book.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title fade-in">Skills</h2>
+                <div class="skills-grid fade-in">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">C / Assembly / Low-Level Systems</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-container glass-panel">
+                            <div class="skill-bar" data-percentage="90">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">High-Level Programming</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar-container glass-panel">
+                            <div class="skill-bar" data-percentage="85">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Web Development</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar-container glass-panel">
+                            <div class="skill-bar" data-percentage="75">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Game Design / Simulation</span>
+                            <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar-container glass-panel">
+                            <div class="skill-bar" data-percentage="72">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Biotech / Bioinformatics</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar-container glass-panel">
+                            <div class="skill-bar" data-percentage="60">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title fade-in">Projects</h2>
+                <div class="projects-grid fade-in">
+                    <article class="project-card glass-panel">
+                        <h3 class="project-title">Game Engine</h3>
+                        <p class="project-summary">Project made in C with extensive mathematics</p>
+                        <p class="project-description">A Game Engine made from scratch completely in C via the use of OpenGL, GLFW, and efficient planning. Algegbra, trigeometry, and euclidian maths are a few of the concepts used in order to properly render graphical logic.</p>
+                        <div class="project-meta">
+                            <span class="project-status status-ongoing">Ongoing</span>
+                            <div class="project-links">
+                                <a href="https://github.com/IvyMycelia/game_engine" class="project-link">GitHub</a>
+                                <a href="#" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card glass-panel">
+                        <h3 class="project-title">Mycelium Research Paper</h3>
+                        <p class="project-summary">An empirical study on mycelium and its ability to replace concrete</p>
+                        <p class="project-description">Lengthy research, conceptualization, bla bla stuff to put here (PLEASE DON'T OMG DON'T FORGET TO PUT SOMETHING HEREEEEE!@!!!!!!)</p>
+                        <div class="project-meta">
+                            <span class="project-status status-finished">Finished</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Link</a>
+                                <a href="#" class="project-link">Notes</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card glass-panel">
+                        <h3 class="project-title">Spreadphae</h3>
+                        <p class="project-summary">Early stage experimental work</p>
+                        <p class="project-description">This is a prototype exploring some new ideas and concepts surrounding the growth of mycelium and the ability to simulate it.</p>
+                        <div class="project-meta">
+                            <span class="project-status status-prototype">Prototype</span>
+                            <div class="project-links">
+                                <a href="https://github.com/IvyMycelia/spreadphae" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title fade-in">Contact</h2>
+                <form class="contact-form glass-panel fade-in" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group form-group-message">
+                        <label for="message">Message</label>
+                        <div class="textarea-wrapper">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="resize-handle" id="resizeHandle"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ivy Mycelia. Some things are experiments; reach out if curious.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Navigation -->
+    <div class="scroll-arrows" id="scrollArrows">
+        <button class="scroll-arrow scroll-arrow-up" id="scrollArrowUp" aria-label="Scroll up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6"/>
+            </svg>
+        </button>
+        <button class="scroll-arrow scroll-arrow-down" id="scrollArrowDown" aria-label="Scroll down">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Blahaj Easter Egg Modal -->
+    <div class="modal-overlay" id="blahajModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <h2 class="modal-title">🎉 Easter Egg Discovered! 🎉</h2>
+                <div class="blahaj-image-container">
+                    <img src="./images/blahaj.png" alt="Blahaj shark" class="blahaj-image">
+                </div>
+                <p class="modal-message">Much love from Ivy 💙💗🤍</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
